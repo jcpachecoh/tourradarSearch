@@ -70,7 +70,11 @@ export class MainGrid extends React.Component<MainGridProps, MainGridState> {
                         this.props.tours.map((item, index) => {
                             return <Row className="show-grid" key={index}>
                                 <Col xs={4} >
-                                    <ImageLoader tourImage={item.tour_image} tourName={item.tour_name} />
+                                    <ImageLoader
+                                        tourImage={item.tour_image}
+                                        tourName={item.tour_name}
+                                        mapImage={item.map_image}
+                                    />
                                 </Col>
                                 <Col xs={4} >
                                     <TourHeader country={item.country} description={item.description} />
@@ -82,7 +86,7 @@ export class MainGrid extends React.Component<MainGridProps, MainGridState> {
                                         operator={item.tour_operator}
                                     />
                                 </Col>
-                                <Col xs={4}>
+                                <Col xs={4} className="right-side-elements">
                                     <Pricing
                                         currency={item.currency}
                                         price={item.price}

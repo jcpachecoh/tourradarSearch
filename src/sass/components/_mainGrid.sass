@@ -16,31 +16,45 @@
                 width: 100%
                 height: auto
                 border: 1px solid
+                padding: 10px
+        .right-side-elements
+            .pricing
+                border-bottom: 1px solid $gray
+                .saving
+                    float: left
 
-        .pricing
-            border-bottom: 1px solid $gray
-            .saving
-                float: left
+                .price
+                    float: right
 
-            .price
-                float: right
+                .tour-days
+                    border-top: 1px solid $gray
+                    border-bottom: 1px solid $gray
+                    position: absolute
+                    top: 90px
+                    text-align: center
+                    width: 92%
 
-        .tour-days
-            border-top: 1px solid $gray
-            border-bottom: 1px solid $gray
-            position: absolute
-            top: 90px
-            text-align: center
-            width: 92%
+                .star-rating
+                    position: absolute
+                    top: 180px
+                    text-align: center
+                    width: 92%
+                    border-bottom: 1px solid $gray
 
-        .star-rating
-            position: absolute
-            top: 180px
-            text-align: center
-            width: 92%
-            border-bottom: 1px solid $gray
+                    .star
+                        color: $yellow
+                        font-size: 24px
+                        top: 100px
 
-            .star
-                color: $yellow
-                font-size: 24px
-                top: 100px
+
+            @media only screen and (max-width: $break-small)
+                width: 100%
+                height: auto
+
+                .tour-days
+                    text-align: center
+                .star-rating
+                    text-align: center
+                    .star
+                        color: $yellow
+                        font-size: 24px

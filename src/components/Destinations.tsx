@@ -14,7 +14,7 @@ export class Destinations extends React.Component<DestinationsProps, {}> {
             <ul className="destinations-list">
                 {this.props.destinations &&
                     this.props.destinations.map((item, index) => {
-                        return <li key="index">{item}</li>;
+                        return <li key={index}>{item}</li>;
                     })
                 }
             </ul>
