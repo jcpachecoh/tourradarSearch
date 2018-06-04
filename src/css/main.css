@@ -23,33 +23,39 @@ body {
         float: left; }
       .main-grid .show-grid .right-side-elements .pricing .price {
         float: right; }
-      .main-grid .show-grid .right-side-elements .pricing .tour-days {
-        border-top: 1px solid #A4A4A4;
-        border-bottom: 1px solid #A4A4A4;
-        position: absolute;
-        top: 90px;
-        text-align: center;
-        width: 92%; }
-      .main-grid .show-grid .right-side-elements .pricing .star-rating {
-        position: absolute;
-        top: 180px;
-        text-align: center;
-        width: 92%;
-        border-bottom: 1px solid #A4A4A4; }
-        .main-grid .show-grid .right-side-elements .pricing .star-rating .star {
-          color: #F7FE2E;
-          font-size: 24px;
-          top: 100px; }
+    .main-grid .show-grid .right-side-elements .tour-days {
+      border-top: 1px solid #A4A4A4;
+      border-bottom: 1px solid #A4A4A4;
+      position: absolute;
+      top: 90px;
+      text-align: center;
+      width: 92%; }
+    .main-grid .show-grid .right-side-elements .star-rating {
+      position: absolute;
+      top: 180px;
+      text-align: center;
+      width: 92%;
+      border-bottom: 1px solid #A4A4A4; }
+      .main-grid .show-grid .right-side-elements .star-rating .star {
+        color: #D7DF01;
+        font-size: 24px;
+        top: 100px; }
     @media only screen and (max-width: 768px) {
       .main-grid .show-grid .right-side-elements {
         width: 100%;
         height: auto; }
         .main-grid .show-grid .right-side-elements .tour-days {
-          text-align: center; }
+          text-align: center;
+          top: 0;
+          border: none; }
         .main-grid .show-grid .right-side-elements .star-rating {
-          text-align: center; }
+          text-align: center;
+          top: 30px;
+          border: none; }
+          .main-grid .show-grid .right-side-elements .star-rating h2 {
+            display: none; }
           .main-grid .show-grid .right-side-elements .star-rating .star {
-            color: #F7FE2E;
+            color: #D7DF01;
             font-size: 24px; } }
 
 .main-grid .dropdown-filter {
@@ -58,3 +64,9 @@ body {
   position: relative; }
   .main-grid .dropdown-filter label {
     padding: 10px; }
+  @media only screen and (max-width: 768px) {
+    .main-grid .dropdown-filter {
+      float: none;
+      position: relative;
+      padding: 20px;
+      margin-left: 30px; } }

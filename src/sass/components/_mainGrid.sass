@@ -17,6 +17,7 @@
                 height: auto
                 border: 1px solid
                 padding: 10px
+
         .right-side-elements
             .pricing
                 border-bottom: 1px solid $gray
@@ -26,25 +27,25 @@
                 .price
                     float: right
 
-                .tour-days
-                    border-top: 1px solid $gray
-                    border-bottom: 1px solid $gray
-                    position: absolute
-                    top: 90px
-                    text-align: center
-                    width: 92%
+            .tour-days
+                border-top: 1px solid $gray
+                border-bottom: 1px solid $gray
+                position: absolute
+                top: 90px
+                text-align: center
+                width: 92%
 
-                .star-rating
-                    position: absolute
-                    top: 180px
-                    text-align: center
-                    width: 92%
-                    border-bottom: 1px solid $gray
+            .star-rating
+                position: absolute
+                top: 180px
+                text-align: center
+                width: 92%
+                border-bottom: 1px solid $gray
 
-                    .star
-                        color: $yellow
-                        font-size: 24px
-                        top: 100px
+                .star
+                    color: $yellow
+                    font-size: 24px
+                    top: 100px
 
 
             @media only screen and (max-width: $break-small)
@@ -53,8 +54,17 @@
 
                 .tour-days
                     text-align: center
+                    top: 0
+                    border: none
+
                 .star-rating
                     text-align: center
+                    top: 30px
+                    border: none
+
+                    h2
+                        display: none
+
                     .star
                         color: $yellow
                         font-size: 24px
